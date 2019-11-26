@@ -1,0 +1,13 @@
+login 999
+creamos us 1000
+logout 999
+login 999
+crear admin 1001
+logout 999
+login 1001
+alta est 1
+alta bici 1
+alta est 2
+mover bici 1 est 2
+baja est 1
+logout 1001

@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+
+int horasms(int array[][]);
+int ms(int array[][]);
+
+int main(void){
+  int i,k=1,can,array[can][4];
+  printf("Cuantas canciones va a meter? ");
+  scanf("%i", &can);
+  printf("Favor de meter los datos en formato de mm:ss!!!\n");
+  for(i=0;i<can;i++){
+    do{
+      printf("Cuanto dura la cancion numero %i?", k);
+      scanf("%i:%i", &array[i][2], &array[i][3]);
+      if(array[i][3]<=60)
+	printf("Los segundos de la cancion %i mo puede ser mas de 59.\n");
+    }while(array[i]<=60);
+    k++;
+  }
+}

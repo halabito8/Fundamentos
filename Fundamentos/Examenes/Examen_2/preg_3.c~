@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+void calcular(int base,int num);
+
+int main(void){
+  int base,num;
+  printf("Dame un numero en base 10: ");
+  scanf("%i",&num);
+  do{
+    printf("A que base lo quieres pasar(entre 2 y 16)? ",base);
+    scanf("%i",&base);
+    if(base<2||base>16)
+      printf("Favor de poner un valor dentro de los parametros.\n");
+  }while(base<2||base>16);
+  calcular(base,num);
+}
+
+void calcular(int base,int num){
+  int cant;
+  cant=num;
+  switch(base){
+  case 4:while(num!=0){
+           cant=num%4;
+           printf("%i",cant);
+	   num=num/4;
+    }
+    printf("\n");
+  }
+}

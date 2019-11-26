@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void laberinto(char laberinto[5][5]);
+int encontrarcamino(char laberinto[5][5],int x,int y);
+
+int main(void){
+  char laberinto[5][5];
+  int i,j;
+  laberinto(laberinto);
+  for(i=0;i<5;i++){
+    for(j=0;j<5;j++)
+      putchar(laberinto[i][j];
+    putchar('\n');
+  }
+}
+
+void laberinto(char laberinto[5][5]){
+  char laberinto={
+		 {' ',' ','x','x','x'},
+                 {'x',' ',' ',' ','x'},
+		 {'x','x','x',' ','x'},
+		 {'x','x',' ',' ','x'},
+                 {'s',' ',' ','x','x'},
+		 };
+}
